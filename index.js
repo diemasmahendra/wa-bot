@@ -61,6 +61,7 @@ async function msgHandler (client, message) {
                 switch (cmd[0]) {
                     case '#sticker':
                     case '#stiker':
+                    case '#meme':
                     if (isMedia) {
                         const mediaData = await decryptMedia(message)
                         const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
